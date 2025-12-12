@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Form</title>
+    </head>
+    <body>
+        <a href="../index.html">Back to Home</a>
+        <h2>Employee Registration Form</h2>
+
+        <form action="../employee?action=add" method="post">
+
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="firstName" required><br><br>
+
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" id="lastname" name="lastName"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+
+            <label for="department">Department:</label><br>
+            <input type="text" id="department" name="department"><br><br>
+
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position"><br><br>
+
+            <label for="salary">Salary:</label><br>
+            <input type="number" id="salary" name="salary" step="0.01"><br><br>
+
+            <label for="hire_date">Hire Date:</label><br>
+            <input type="date" id="hire_date" name="hireDate"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>

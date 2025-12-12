@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Employee</title>
+        <style>
+            body {
+                font-family: Arial;
+                margin: 40px;
+            }
+            h2 {
+                color: red;
+            }
+            input, button {
+                padding: 8px;
+                margin: 6px 0;
+                width: 250px;
+            }
+            button {
+                background: #f44336;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #d32f2f;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <a href="../index.html">Back to Home</a>
+        <h2>Delete Employee</h2>
+
+        <form action="../employee?action=delete" method="post">
+
+            <label>Employee ID:</label><br>
+            <input type="number" name="id" required><br><br>
+
+            <button type="submit">Delete Employee</button>
+        </form>
+
+
+
+    </body>
+</html>
