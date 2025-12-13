@@ -14,11 +14,15 @@ public class ThirdServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         
         String name = request.getParameter("username");
-        String email = request.getParameter("email");
-   
-         if (name == null && email == null ) {
-         out.println(" <h1> Session not done  </h1>");
-         }
+        String email = request.getParameter("email"); 
+        
+        if(email == ""){
+         out.println("<h2> Your Session Values not available Please Set your Sesion</h2>");
+          out.println("<a href='" + request.getContextPath() +
+            "/second?username=" + name + "'> Go Back </a>");
+
+           return;
+        }
          
         out.println("<h2>Session Details</h2>");
         out.println("Name: " + name + "<br>");

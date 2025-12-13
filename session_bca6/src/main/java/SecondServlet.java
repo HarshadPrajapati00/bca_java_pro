@@ -14,6 +14,13 @@ public class SecondServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String name = request.getParameter("username");
+        
+        if(name == ""){
+          
+           out.println("<h2> Your Session Values not available Please Set your Sesion</h2>");
+           out.println("<a href='first'> Go Back </a>");
+           return;
+        }
 
         out.println("<h2>Welcome, " + name + "</h2>");
         out.println("<form action='third'>");
